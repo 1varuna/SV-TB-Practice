@@ -1,0 +1,25 @@
+$date
+	Wed Jul 08 13:21:27 2020
+$end
+$version
+	QuestaSim Version 10.4e
+$end
+$timescale
+	1ns
+$end
+
+$scope module pkt_tb_top $end
+
+$scope module eth_sw1 $end
+
+$scope module portA_in $end
+$upscope $end
+
+$scope module portB_in $end
+$upscope $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+$end

@@ -1,0 +1,611 @@
+Start time: 14:32:01 on Jul 06,2020
+qverilog -reportprogress 300 -guimode -sv fifo.sv eth_fsm.sv switch2x2.sv pkt_tb_top.sv 
+-- Compiling module fifo
+-- Compiling module eth_fsm
+-- Compiling package switch2x2_sv_unit
+-- Compiling module switch2x2
+-- Compiling package pkt_tb_env_pkg
+-- Compiling interface eth_sw_if
+-- Compiling package pkt_tb_top_sv_unit
+-- Importing package pkt_tb_env_pkg
+-- Compiling module pkt_tb_top
+
+Top level modules:
+	pkt_tb_top
+# -- Compiling interface eth_sw_if
+# -- Compiling package pkt_tb_top_sv_unit
+# -- Importing package pkt_tb_env_pkg
+# -- Compiling module pkt_tb_top
+# 
+# Top level modules:
+# 	pkt_tb_top
+# End time: 14:32:01 on Jul 06,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vsim -lib work switch2x2_sv_unit pkt_tb_top_sv_unit pkt_tb_top -c -do {run -all; quit -sim} -appendlog -l qverilog.log -vopt -prevmsgcount 0,0,0,0 -usestarttime 1,32,14,6,6,120,1,187,1
+# vsim -lib work switch2x2_sv_unit pkt_tb_top_sv_unit pkt_tb_top -c -do "run -all; quit -sim" -appendlog -l qverilog.log -vopt 
+# Start time: 14:32:01 on Jul 06,2020
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# 
+# Loading sv_std.std
+# Loading work.switch2x2_sv_unit(fast)
+# Loading work.pkt_tb_env_pkg(fast)
+# Loading work.pkt_tb_top_sv_unit(fast)
+# Loading work.pkt_tb_top(fast)
+# Loading work.eth_sw_if(fast)
+# run -all
+# Create a mailbox (0) for monitor checker
+# Create a mailbox (1) for monitor checker
+# Create a mailbox (2) for monitor checker
+# Create a mailbox (3) for monitor checker
+# Created packet TB Env
+# pkt_tb_env::run() called
+# 	PKT GENERATOR :: New packet created... pkt no. 1 out of 30 packets 
+# 
+# 	PKT INFO: sa=00001234 da=00001234 crc=abcd1234
+# 
+# 	PKT GENERATOR :: New packet created... pkt no. 2 out of 30 packets 
+# 
+# 	PKT INFO: sa=00001234 da=0000abcd crc=abcd1234
+# 
+# 	PKT GENERATOR :: New packet created... pkt no. 3 out of 30 packets 
+# 
+# 	PKT INFO: sa=0000abcd da=00001234 crc=abcd1234
+# 
+# 	PKT GENERATOR :: New packet created... pkt no. 4 out of 30 packets 
+# 
+# 	PKT INFO: sa=0000abcd da=0000abcd crc=abcd1234
+# 
+# 	PKT GENERATOR :: New packet created... pkt no. 5 out of 30 packets 
+# 
+# 	PKT INFO: sa=0000abcd da=00001234 crc=abcd1234
+# 
+# 	PKT GENERATOR :: New packet created... pkt no. 6 out of 30 packets 
+# 
+# 	PKT INFO: sa=00001234 da=0000abcd crc=abcd1234
+# 
+# 	PKT GENERATOR :: New packet created... pkt no. 7 out of 30 packets 
+# 
+# 	PKT INFO: sa=00001234 da=0000abcd crc=abcd1234
+# 
+# 	PKT GENERATOR :: New packet created... pkt no. 8 out of 30 packets 
+# 
+# 	PKT INFO: sa=00001234 da=0000abcd crc=abcd1234
+# 
+# 	PKT GENERATOR :: New packet created... pkt no. 9 out of 30 packets 
+# 
+# 	PKT INFO: sa=00001234 da=00001234 crc=abcd1234
+# 
+# 	PKT GENERATOR :: New packet created... pkt no. 10 out of 30 packets 
+# 
+# 	PKT INFO: sa=00001234 da=0000abcd crc=abcd1234
+# 
+# 	PKT GENERATOR :: New packet created... pkt no. 11 out of 30 packets 
+# 
+# 	PKT INFO: sa=0000abcd da=00001234 crc=abcd1234
+# 
+# 	PKT GENERATOR :: New packet created... pkt no. 12 out of 30 packets 
+# 
+# 	PKT INFO: sa=00001234 da=00001234 crc=abcd1234
+# 
+# 	PKT GENERATOR :: New packet created... pkt no. 13 out of 30 packets 
+# 
+# 	PKT INFO: sa=00001234 da=00001234 crc=abcd1234
+# 
+# 	PKT GENERATOR :: New packet created... pkt no. 14 out of 30 packets 
+# 
+# 	PKT INFO: sa=0000abcd da=00001234 crc=abcd1234
+# 
+# 	PKT GENERATOR :: New packet created... pkt no. 15 out of 30 packets 
+# 
+# 	PKT INFO: sa=0000abcd da=0000abcd crc=abcd1234
+# 
+# 	PKT GENERATOR :: New packet created... pkt no. 16 out of 30 packets 
+# 
+# 	PKT INFO: sa=0000abcd da=0000abcd crc=abcd1234
+# 
+# 	PKT GENERATOR :: New packet created... pkt no. 17 out of 30 packets 
+# 
+# 	PKT INFO: sa=0000abcd da=00001234 crc=abcd1234
+# 
+# 	PKT GENERATOR :: New packet created... pkt no. 18 out of 30 packets 
+# 
+# 	PKT INFO: sa=0000abcd da=00001234 crc=abcd1234
+# 
+# 	PKT GENERATOR :: New packet created... pkt no. 19 out of 30 packets 
+# 
+# 	PKT INFO: sa=00001234 da=00001234 crc=abcd1234
+# 
+# 	PKT GENERATOR :: New packet created... pkt no. 20 out of 30 packets 
+# 
+# 	PKT INFO: sa=00001234 da=00001234 crc=abcd1234
+# 
+# 	PKT GENERATOR :: New packet created... pkt no. 21 out of 30 packets 
+# 
+# 	PKT INFO: sa=00001234 da=00001234 crc=abcd1234
+# 
+# 	PKT GENERATOR :: New packet created... pkt no. 22 out of 30 packets 
+# 
+# 	PKT INFO: sa=00001234 da=00001234 crc=abcd1234
+# 
+# 	PKT GENERATOR :: New packet created... pkt no. 23 out of 30 packets 
+# 
+# 	PKT INFO: sa=00001234 da=0000abcd crc=abcd1234
+# 
+# 	PKT GENERATOR :: New packet created... pkt no. 24 out of 30 packets 
+# 
+# 	PKT INFO: sa=00001234 da=00001234 crc=abcd1234
+# 
+# 	PKT GENERATOR :: New packet created... pkt no. 25 out of 30 packets 
+# 
+# 	PKT INFO: sa=0000abcd da=00001234 crc=abcd1234
+# 
+# 	PKT GENERATOR :: New packet created... pkt no. 26 out of 30 packets 
+# 
+# 	PKT INFO: sa=00001234 da=00001234 crc=abcd1234
+# 
+# 	PKT GENERATOR :: New packet created... pkt no. 27 out of 30 packets 
+# 
+# 	PKT INFO: sa=00001234 da=0000abcd crc=abcd1234
+# 
+# 	PKT GENERATOR :: New packet created... pkt no. 28 out of 30 packets 
+# 
+# 	PKT INFO: sa=0000abcd da=0000abcd crc=abcd1234
+# 
+# 	PKT GENERATOR :: New packet created... pkt no. 29 out of 30 packets 
+# 
+# 	PKT INFO: sa=0000abcd da=0000abcd crc=abcd1234
+# 
+# 	PKT GENERATOR :: New packet created... pkt no. 30 out of 30 packets 
+# 
+# 	PKT INFO: sa=0000abcd da=00001234 crc=abcd1234
+# 
+# 	 PKT DRIVER :: Got packet no. 1 
+#  	 RECEIVED PKT INFO: sa=00001234 da=00001234 crc=abcd1234 
+# 
+# pkt_drv::drv_pkt_portA: numDwords=3 
+# pkt_chk::run() called
+# pkt_chk::get_and_process() 	 process_pkt on port=0 called
+# pkt_chk::get_and_process() 	 process_pkt on port=1 called
+# pkt_chk::get_and_process() 	 process_pkt on port=2 called
+# pkt_chk::get_and_process() 	 process_pkt on port=3 called
+# time=                  55 pkt_drv::drv_pkt_portB:count=0 cur_word=00001234
+# time=                  65 pkt_drv::drv_pkt_portB:count=1 cur_word=00001234
+# time=                  75, packet_mon:: Seeing SoP on Port B input
+# time=                  75 pkt_drv::drv_pkt_portB:count=2 cur_word=abcd1234
+# time=                  85 pkt_drv::drv_pkt_portB:count=3 cur_word=00000000
+# 	 PKT DRIVER :: Got packet no. 2 
+#  	 RECEIVED PKT INFO: sa=00001234 da=0000abcd crc=abcd1234 
+# 
+# pkt_drv::drv_pkt_portA: numDwords=3 
+# time=95 packet_mon:: Saw packet on Port B input: pkt=sa=00001234 da=00001234 crc=abcd1234
+# time=                  95 pkt_drv::drv_pkt_portB:count=0 cur_word=0000abcd
+# time=95 pkt_chk:: got packet on port:1 packet=sa=00001234 da=00001234 crc=abcd1234
+# time=                 105 pkt_drv::drv_pkt_portB:count=1 cur_word=00001234
+# time=                 115, packet_mon:: Seeing SoP on Port B input
+# time=                 115 pkt_drv::drv_pkt_portB:count=2 cur_word=abcd1234
+# time=                 125 pkt_drv::drv_pkt_portB:count=3 cur_word=00000000
+# 	 PKT DRIVER :: Got packet no. 3 
+#  	 RECEIVED PKT INFO: sa=0000abcd da=00001234 crc=abcd1234 
+# 
+# 	PKT DRIVER :: drv_pkt_portA: numDwords=3
+# 
+# time=135 packet_mon:: Saw packet on Port B input: pkt=sa=00001234 da=0000abcd crc=abcd1234
+# time=                 135 pkt_drv::drv_pkt_portA:count=0 cur_word=00001234
+# time=135 pkt_chk:: got packet on port:1 packet=sa=00001234 da=0000abcd crc=abcd1234
+# time=                 145 pkt_drv::drv_pkt_portA:count=1 cur_word=0000abcd
+# time=                 155, packet_mon:: Seeing SoP on Port A input
+# time=                 155 pkt_drv::drv_pkt_portA:count=2 cur_word=abcd1234
+# time=                 165 pkt_drv::drv_pkt_portA:count=3 cur_word=00000000
+# 	 PKT DRIVER :: Got packet no. 4 
+#  	 RECEIVED PKT INFO: sa=0000abcd da=0000abcd crc=abcd1234 
+# 
+# 	PKT DRIVER :: drv_pkt_portA: numDwords=3
+# 
+# time=175 packet_mon:: Saw packet on Port A input: pkt=sa=0000abcd da=00001234 crc=abcd1234
+# time=                 175 pkt_drv::drv_pkt_portA:count=0 cur_word=0000abcd
+# time=175 pkt_chk:: got packet on port:0 packet=sa=0000abcd da=00001234 crc=abcd1234
+# time=                 185 pkt_drv::drv_pkt_portA:count=1 cur_word=0000abcd
+# time=                 195, packet_mon:: Seeing SoP on Port A input
+# time=                 195 pkt_drv::drv_pkt_portA:count=2 cur_word=abcd1234
+# time=                 205 pkt_drv::drv_pkt_portA:count=3 cur_word=00000000
+# 	 PKT DRIVER :: Got packet no. 5 
+#  	 RECEIVED PKT INFO: sa=0000abcd da=00001234 crc=abcd1234 
+# 
+# 	PKT DRIVER :: drv_pkt_portA: numDwords=3
+# 
+# time=215 packet_mon:: Saw packet on Port A input: pkt=sa=0000abcd da=0000abcd crc=abcd1234
+# time=                 215 pkt_drv::drv_pkt_portA:count=0 cur_word=00001234
+# time=215 pkt_chk:: got packet on port:0 packet=sa=0000abcd da=0000abcd crc=abcd1234
+# time=                 225 pkt_drv::drv_pkt_portA:count=1 cur_word=0000abcd
+# time=                 235, packet_mon:: Seeing SoP on Port A input
+# time=                 235 pkt_drv::drv_pkt_portA:count=2 cur_word=abcd1234
+# time=                 245 pkt_drv::drv_pkt_portA:count=3 cur_word=00000000
+# 	 PKT DRIVER :: Got packet no. 6 
+#  	 RECEIVED PKT INFO: sa=00001234 da=0000abcd crc=abcd1234 
+# 
+# pkt_drv::drv_pkt_portA: numDwords=3 
+# time=255 packet_mon:: Saw packet on Port A input: pkt=sa=0000abcd da=00001234 crc=abcd1234
+# time=                 255 pkt_drv::drv_pkt_portB:count=0 cur_word=0000abcd
+# time=255 pkt_chk:: got packet on port:0 packet=sa=0000abcd da=00001234 crc=abcd1234
+# time=                 265 pkt_drv::drv_pkt_portB:count=1 cur_word=00001234
+# time=                 275, packet_mon:: Seeing SoP on Port B input
+# time=                 275 pkt_drv::drv_pkt_portB:count=2 cur_word=abcd1234
+# time=                 285 pkt_drv::drv_pkt_portB:count=3 cur_word=00000000
+# 	 PKT DRIVER :: Got packet no. 7 
+#  	 RECEIVED PKT INFO: sa=00001234 da=0000abcd crc=abcd1234 
+# 
+# pkt_drv::drv_pkt_portA: numDwords=3 
+# time=295 packet_mon:: Saw packet on Port B input: pkt=sa=00001234 da=0000abcd crc=abcd1234
+# time=                 295 pkt_drv::drv_pkt_portB:count=0 cur_word=0000abcd
+# time=295 pkt_chk:: got packet on port:1 packet=sa=00001234 da=0000abcd crc=abcd1234
+# time=                 305 pkt_drv::drv_pkt_portB:count=1 cur_word=00001234
+# time=                 315, packet_mon:: Seeing SoP on Port B input
+# time=                 315 pkt_drv::drv_pkt_portB:count=2 cur_word=abcd1234
+# time=                 325 pkt_drv::drv_pkt_portB:count=3 cur_word=00000000
+# 	 PKT DRIVER :: Got packet no. 8 
+#  	 RECEIVED PKT INFO: sa=00001234 da=0000abcd crc=abcd1234 
+# 
+# pkt_drv::drv_pkt_portA: numDwords=3 
+# time=335 packet_mon:: Saw packet on Port B input: pkt=sa=00001234 da=0000abcd crc=abcd1234
+# time=                 335 pkt_drv::drv_pkt_portB:count=0 cur_word=0000abcd
+# time=335 pkt_chk:: got packet on port:1 packet=sa=00001234 da=0000abcd crc=abcd1234
+# time=                 345 pkt_drv::drv_pkt_portB:count=1 cur_word=00001234
+# time=                 355, packet_mon:: Seeing SoP on Port B input
+# time=                 355 pkt_drv::drv_pkt_portB:count=2 cur_word=abcd1234
+# time=                 365 pkt_drv::drv_pkt_portB:count=3 cur_word=00000000
+# 	 PKT DRIVER :: Got packet no. 9 
+#  	 RECEIVED PKT INFO: sa=00001234 da=00001234 crc=abcd1234 
+# 
+# pkt_drv::drv_pkt_portA: numDwords=3 
+# time=375 packet_mon:: Saw packet on Port B input: pkt=sa=00001234 da=0000abcd crc=abcd1234
+# time=                 375 pkt_drv::drv_pkt_portB:count=0 cur_word=00001234
+# time=375 pkt_chk:: got packet on port:1 packet=sa=00001234 da=0000abcd crc=abcd1234
+# time=                 385 pkt_drv::drv_pkt_portB:count=1 cur_word=00001234
+# time=                 395, packet_mon:: Seeing SoP on Port B input
+# time=                 395 pkt_drv::drv_pkt_portB:count=2 cur_word=abcd1234
+# time=                 405 pkt_drv::drv_pkt_portB:count=3 cur_word=00000000
+# 	 PKT DRIVER :: Got packet no. 10 
+#  	 RECEIVED PKT INFO: sa=00001234 da=0000abcd crc=abcd1234 
+# 
+# pkt_drv::drv_pkt_portA: numDwords=3 
+# time=415 packet_mon:: Saw packet on Port B input: pkt=sa=00001234 da=00001234 crc=abcd1234
+# time=                 415 pkt_drv::drv_pkt_portB:count=0 cur_word=0000abcd
+# time=415 pkt_chk:: got packet on port:1 packet=sa=00001234 da=00001234 crc=abcd1234
+# time=                 425 pkt_drv::drv_pkt_portB:count=1 cur_word=00001234
+# time=                 435, packet_mon:: Seeing SoP on Port B input
+# time=                 435 pkt_drv::drv_pkt_portB:count=2 cur_word=abcd1234
+# time=                 445 pkt_drv::drv_pkt_portB:count=3 cur_word=00000000
+# 	 PKT DRIVER :: Got packet no. 11 
+#  	 RECEIVED PKT INFO: sa=0000abcd da=00001234 crc=abcd1234 
+# 
+# 	PKT DRIVER :: drv_pkt_portA: numDwords=3
+# 
+# time=455 packet_mon:: Saw packet on Port B input: pkt=sa=00001234 da=0000abcd crc=abcd1234
+# time=                 455 pkt_drv::drv_pkt_portA:count=0 cur_word=00001234
+# time=455 pkt_chk:: got packet on port:1 packet=sa=00001234 da=0000abcd crc=abcd1234
+# time=                 465 pkt_drv::drv_pkt_portA:count=1 cur_word=0000abcd
+# time=                 475, packet_mon:: Seeing SoP on Port A input
+# time=                 475 pkt_drv::drv_pkt_portA:count=2 cur_word=abcd1234
+# time=                 485 pkt_drv::drv_pkt_portA:count=3 cur_word=00000000
+# 	 PKT DRIVER :: Got packet no. 12 
+#  	 RECEIVED PKT INFO: sa=00001234 da=00001234 crc=abcd1234 
+# 
+# pkt_drv::drv_pkt_portA: numDwords=3 
+# time=495 packet_mon:: Saw packet on Port A input: pkt=sa=0000abcd da=00001234 crc=abcd1234
+# time=                 495 pkt_drv::drv_pkt_portB:count=0 cur_word=00001234
+# time=495 pkt_chk:: got packet on port:0 packet=sa=0000abcd da=00001234 crc=abcd1234
+# time=                 505 pkt_drv::drv_pkt_portB:count=1 cur_word=00001234
+# time=                 515, packet_mon:: Seeing SoP on Port B input
+# time=                 515 pkt_drv::drv_pkt_portB:count=2 cur_word=abcd1234
+# time=                 525 pkt_drv::drv_pkt_portB:count=3 cur_word=00000000
+# 	 PKT DRIVER :: Got packet no. 13 
+#  	 RECEIVED PKT INFO: sa=00001234 da=00001234 crc=abcd1234 
+# 
+# pkt_drv::drv_pkt_portA: numDwords=3 
+# time=535 packet_mon:: Saw packet on Port B input: pkt=sa=00001234 da=00001234 crc=abcd1234
+# time=                 535 pkt_drv::drv_pkt_portB:count=0 cur_word=00001234
+# time=535 pkt_chk:: got packet on port:1 packet=sa=00001234 da=00001234 crc=abcd1234
+# time=                 545 pkt_drv::drv_pkt_portB:count=1 cur_word=00001234
+# time=                 555, packet_mon:: Seeing SoP on Port B input
+# time=                 555 pkt_drv::drv_pkt_portB:count=2 cur_word=abcd1234
+# time=                 565 pkt_drv::drv_pkt_portB:count=3 cur_word=00000000
+# 	 PKT DRIVER :: Got packet no. 14 
+#  	 RECEIVED PKT INFO: sa=0000abcd da=00001234 crc=abcd1234 
+# 
+# 	PKT DRIVER :: drv_pkt_portA: numDwords=3
+# 
+# time=575 packet_mon:: Saw packet on Port B input: pkt=sa=00001234 da=00001234 crc=abcd1234
+# time=                 575 pkt_drv::drv_pkt_portA:count=0 cur_word=00001234
+# time=575 pkt_chk:: got packet on port:1 packet=sa=00001234 da=00001234 crc=abcd1234
+# time=                 585 pkt_drv::drv_pkt_portA:count=1 cur_word=0000abcd
+# time=                 595, packet_mon:: Seeing SoP on Port A input
+# time=                 595 pkt_drv::drv_pkt_portA:count=2 cur_word=abcd1234
+# time=                 605 pkt_drv::drv_pkt_portA:count=3 cur_word=00000000
+# 	 PKT DRIVER :: Got packet no. 15 
+#  	 RECEIVED PKT INFO: sa=0000abcd da=0000abcd crc=abcd1234 
+# 
+# 	PKT DRIVER :: drv_pkt_portA: numDwords=3
+# 
+# time=615 packet_mon:: Saw packet on Port A input: pkt=sa=0000abcd da=00001234 crc=abcd1234
+# time=                 615 pkt_drv::drv_pkt_portA:count=0 cur_word=0000abcd
+# time=615 pkt_chk:: got packet on port:0 packet=sa=0000abcd da=00001234 crc=abcd1234
+# time=                 625 pkt_drv::drv_pkt_portA:count=1 cur_word=0000abcd
+# time=                 635, packet_mon:: Seeing SoP on Port A input
+# time=                 635 pkt_drv::drv_pkt_portA:count=2 cur_word=abcd1234
+# time=                 645 pkt_drv::drv_pkt_portA:count=3 cur_word=00000000
+# 	 PKT DRIVER :: Got packet no. 16 
+#  	 RECEIVED PKT INFO: sa=0000abcd da=0000abcd crc=abcd1234 
+# 
+# 	PKT DRIVER :: drv_pkt_portA: numDwords=3
+# 
+# time=655 packet_mon:: Saw packet on Port A input: pkt=sa=0000abcd da=0000abcd crc=abcd1234
+# time=                 655 pkt_drv::drv_pkt_portA:count=0 cur_word=0000abcd
+# time=655 pkt_chk:: got packet on port:0 packet=sa=0000abcd da=0000abcd crc=abcd1234
+# time=                 665 pkt_drv::drv_pkt_portA:count=1 cur_word=0000abcd
+# time=                 675, packet_mon:: Seeing SoP on Port A input
+# time=                 675 pkt_drv::drv_pkt_portA:count=2 cur_word=abcd1234
+# time=                 685 pkt_drv::drv_pkt_portA:count=3 cur_word=00000000
+# 	 PKT DRIVER :: Got packet no. 17 
+#  	 RECEIVED PKT INFO: sa=0000abcd da=00001234 crc=abcd1234 
+# 
+# 	PKT DRIVER :: drv_pkt_portA: numDwords=3
+# 
+# time=695 packet_mon:: Saw packet on Port A input: pkt=sa=0000abcd da=0000abcd crc=abcd1234
+# time=                 695 pkt_drv::drv_pkt_portA:count=0 cur_word=00001234
+# time=695 pkt_chk:: got packet on port:0 packet=sa=0000abcd da=0000abcd crc=abcd1234
+# time=                 705 pkt_drv::drv_pkt_portA:count=1 cur_word=0000abcd
+# time=                 715, packet_mon:: Seeing SoP on Port A input
+# time=                 715 pkt_drv::drv_pkt_portA:count=2 cur_word=abcd1234
+# time=                 725 pkt_drv::drv_pkt_portA:count=3 cur_word=00000000
+# 	 PKT DRIVER :: Got packet no. 18 
+#  	 RECEIVED PKT INFO: sa=0000abcd da=00001234 crc=abcd1234 
+# 
+# 	PKT DRIVER :: drv_pkt_portA: numDwords=3
+# 
+# time=735 packet_mon:: Saw packet on Port A input: pkt=sa=0000abcd da=00001234 crc=abcd1234
+# time=                 735 pkt_drv::drv_pkt_portA:count=0 cur_word=00001234
+# time=735 pkt_chk:: got packet on port:0 packet=sa=0000abcd da=00001234 crc=abcd1234
+# time=                 745 pkt_drv::drv_pkt_portA:count=1 cur_word=0000abcd
+# time=                 755, packet_mon:: Seeing SoP on Port A input
+# time=                 755 pkt_drv::drv_pkt_portA:count=2 cur_word=abcd1234
+# time=                 765 pkt_drv::drv_pkt_portA:count=3 cur_word=00000000
+# 	 PKT DRIVER :: Got packet no. 19 
+#  	 RECEIVED PKT INFO: sa=00001234 da=00001234 crc=abcd1234 
+# 
+# pkt_drv::drv_pkt_portA: numDwords=3 
+# time=775 packet_mon:: Saw packet on Port A input: pkt=sa=0000abcd da=00001234 crc=abcd1234
+# time=                 775 pkt_drv::drv_pkt_portB:count=0 cur_word=00001234
+# time=775 pkt_chk:: got packet on port:0 packet=sa=0000abcd da=00001234 crc=abcd1234
+# time=                 785 pkt_drv::drv_pkt_portB:count=1 cur_word=00001234
+# time=                 795, packet_mon:: Seeing SoP on Port B input
+# time=                 795 pkt_drv::drv_pkt_portB:count=2 cur_word=abcd1234
+# time=                 805 pkt_drv::drv_pkt_portB:count=3 cur_word=00000000
+# 	 PKT DRIVER :: Got packet no. 20 
+#  	 RECEIVED PKT INFO: sa=00001234 da=00001234 crc=abcd1234 
+# 
+# pkt_drv::drv_pkt_portA: numDwords=3 
+# time=815 packet_mon:: Saw packet on Port B input: pkt=sa=00001234 da=00001234 crc=abcd1234
+# time=                 815 pkt_drv::drv_pkt_portB:count=0 cur_word=00001234
+# time=815 pkt_chk:: got packet on port:1 packet=sa=00001234 da=00001234 crc=abcd1234
+# time=                 825 pkt_drv::drv_pkt_portB:count=1 cur_word=00001234
+# time=                 835, packet_mon:: Seeing SoP on Port B input
+# time=                 835 pkt_drv::drv_pkt_portB:count=2 cur_word=abcd1234
+# time=                 845 pkt_drv::drv_pkt_portB:count=3 cur_word=00000000
+# 	 PKT DRIVER :: Got packet no. 21 
+#  	 RECEIVED PKT INFO: sa=00001234 da=00001234 crc=abcd1234 
+# 
+# pkt_drv::drv_pkt_portA: numDwords=3 
+# time=855 packet_mon:: Saw packet on Port B input: pkt=sa=00001234 da=00001234 crc=abcd1234
+# time=                 855 pkt_drv::drv_pkt_portB:count=0 cur_word=00001234
+# time=855 pkt_chk:: got packet on port:1 packet=sa=00001234 da=00001234 crc=abcd1234
+# time=                 865 pkt_drv::drv_pkt_portB:count=1 cur_word=00001234
+# time=                 875, packet_mon:: Seeing SoP on Port B input
+# time=                 875 pkt_drv::drv_pkt_portB:count=2 cur_word=abcd1234
+# time=                 885 pkt_drv::drv_pkt_portB:count=3 cur_word=00000000
+# 	 PKT DRIVER :: Got packet no. 22 
+#  	 RECEIVED PKT INFO: sa=00001234 da=00001234 crc=abcd1234 
+# 
+# pkt_drv::drv_pkt_portA: numDwords=3 
+# time=895 packet_mon:: Saw packet on Port B input: pkt=sa=00001234 da=00001234 crc=abcd1234
+# time=                 895 pkt_drv::drv_pkt_portB:count=0 cur_word=00001234
+# time=895 pkt_chk:: got packet on port:1 packet=sa=00001234 da=00001234 crc=abcd1234
+# time=                 905 pkt_drv::drv_pkt_portB:count=1 cur_word=00001234
+# time=                 915, packet_mon:: Seeing SoP on Port B input
+# time=                 915 pkt_drv::drv_pkt_portB:count=2 cur_word=abcd1234
+# time=                 925 pkt_drv::drv_pkt_portB:count=3 cur_word=00000000
+# 	 PKT DRIVER :: Got packet no. 23 
+#  	 RECEIVED PKT INFO: sa=00001234 da=0000abcd crc=abcd1234 
+# 
+# pkt_drv::drv_pkt_portA: numDwords=3 
+# time=935 packet_mon:: Saw packet on Port B input: pkt=sa=00001234 da=00001234 crc=abcd1234
+# time=                 935 pkt_drv::drv_pkt_portB:count=0 cur_word=0000abcd
+# time=935 pkt_chk:: got packet on port:1 packet=sa=00001234 da=00001234 crc=abcd1234
+# time=                 945 pkt_drv::drv_pkt_portB:count=1 cur_word=00001234
+# time=                 955, packet_mon:: Seeing SoP on Port B input
+# time=                 955 pkt_drv::drv_pkt_portB:count=2 cur_word=abcd1234
+# time=                 965 pkt_drv::drv_pkt_portB:count=3 cur_word=00000000
+# 	 PKT DRIVER :: Got packet no. 24 
+#  	 RECEIVED PKT INFO: sa=00001234 da=00001234 crc=abcd1234 
+# 
+# pkt_drv::drv_pkt_portA: numDwords=3 
+# time=975 packet_mon:: Saw packet on Port B input: pkt=sa=00001234 da=0000abcd crc=abcd1234
+# time=                 975 pkt_drv::drv_pkt_portB:count=0 cur_word=00001234
+# time=975 pkt_chk:: got packet on port:1 packet=sa=00001234 da=0000abcd crc=abcd1234
+# time=                 985 pkt_drv::drv_pkt_portB:count=1 cur_word=00001234
+# time=                 995, packet_mon:: Seeing SoP on Port B input
+# time=                 995 pkt_drv::drv_pkt_portB:count=2 cur_word=abcd1234
+# time=                1005 pkt_drv::drv_pkt_portB:count=3 cur_word=00000000
+# 	 PKT DRIVER :: Got packet no. 25 
+#  	 RECEIVED PKT INFO: sa=0000abcd da=00001234 crc=abcd1234 
+# 
+# 	PKT DRIVER :: drv_pkt_portA: numDwords=3
+# 
+# time=1015 packet_mon:: Saw packet on Port B input: pkt=sa=00001234 da=00001234 crc=abcd1234
+# time=                1015 pkt_drv::drv_pkt_portA:count=0 cur_word=00001234
+# time=1015 pkt_chk:: got packet on port:1 packet=sa=00001234 da=00001234 crc=abcd1234
+# time=                1025 pkt_drv::drv_pkt_portA:count=1 cur_word=0000abcd
+# time=                1035, packet_mon:: Seeing SoP on Port A input
+# time=                1035 pkt_drv::drv_pkt_portA:count=2 cur_word=abcd1234
+# time=                1045 pkt_drv::drv_pkt_portA:count=3 cur_word=00000000
+# 	 PKT DRIVER :: Got packet no. 26 
+#  	 RECEIVED PKT INFO: sa=00001234 da=00001234 crc=abcd1234 
+# 
+# pkt_drv::drv_pkt_portA: numDwords=3 
+# time=1055 packet_mon:: Saw packet on Port A input: pkt=sa=0000abcd da=00001234 crc=abcd1234
+# time=                1055 pkt_drv::drv_pkt_portB:count=0 cur_word=00001234
+# time=1055 pkt_chk:: got packet on port:0 packet=sa=0000abcd da=00001234 crc=abcd1234
+# time=                1065 pkt_drv::drv_pkt_portB:count=1 cur_word=00001234
+# time=                1075, packet_mon:: Seeing SoP on Port B input
+# time=                1075 pkt_drv::drv_pkt_portB:count=2 cur_word=abcd1234
+# time=                1085 pkt_drv::drv_pkt_portB:count=3 cur_word=00000000
+# 	 PKT DRIVER :: Got packet no. 27 
+#  	 RECEIVED PKT INFO: sa=00001234 da=0000abcd crc=abcd1234 
+# 
+# pkt_drv::drv_pkt_portA: numDwords=3 
+# time=1095 packet_mon:: Saw packet on Port B input: pkt=sa=00001234 da=00001234 crc=abcd1234
+# time=                1095 pkt_drv::drv_pkt_portB:count=0 cur_word=0000abcd
+# time=1095 pkt_chk:: got packet on port:1 packet=sa=00001234 da=00001234 crc=abcd1234
+# time=                1105 pkt_drv::drv_pkt_portB:count=1 cur_word=00001234
+# time=                1115, packet_mon:: Seeing SoP on Port B input
+# time=                1115 pkt_drv::drv_pkt_portB:count=2 cur_word=abcd1234
+# time=                1125 pkt_drv::drv_pkt_portB:count=3 cur_word=00000000
+# 	 PKT DRIVER :: Got packet no. 28 
+#  	 RECEIVED PKT INFO: sa=0000abcd da=0000abcd crc=abcd1234 
+# 
+# 	PKT DRIVER :: drv_pkt_portA: numDwords=3
+# 
+# time=1135 packet_mon:: Saw packet on Port B input: pkt=sa=00001234 da=0000abcd crc=abcd1234
+# time=                1135 pkt_drv::drv_pkt_portA:count=0 cur_word=0000abcd
+# time=1135 pkt_chk:: got packet on port:1 packet=sa=00001234 da=0000abcd crc=abcd1234
+# time=                1145 pkt_drv::drv_pkt_portA:count=1 cur_word=0000abcd
+# time=                1155, packet_mon:: Seeing SoP on Port A input
+# time=                1155 pkt_drv::drv_pkt_portA:count=2 cur_word=abcd1234
+# time=                1165 pkt_drv::drv_pkt_portA:count=3 cur_word=00000000
+# 	 PKT DRIVER :: Got packet no. 29 
+#  	 RECEIVED PKT INFO: sa=0000abcd da=0000abcd crc=abcd1234 
+# 
+# 	PKT DRIVER :: drv_pkt_portA: numDwords=3
+# 
+# time=1175 packet_mon:: Saw packet on Port A input: pkt=sa=0000abcd da=0000abcd crc=abcd1234
+# time=                1175 pkt_drv::drv_pkt_portA:count=0 cur_word=0000abcd
+# time=1175 pkt_chk:: got packet on port:0 packet=sa=0000abcd da=0000abcd crc=abcd1234
+# time=                1185 pkt_drv::drv_pkt_portA:count=1 cur_word=0000abcd
+# time=                1195, packet_mon:: Seeing SoP on Port A input
+# time=                1195 pkt_drv::drv_pkt_portA:count=2 cur_word=abcd1234
+# time=                1205 pkt_drv::drv_pkt_portA:count=3 cur_word=00000000
+# 	 PKT DRIVER :: Got packet no. 30 
+#  	 RECEIVED PKT INFO: sa=0000abcd da=00001234 crc=abcd1234 
+# 
+# 	PKT DRIVER :: drv_pkt_portA: numDwords=3
+# 
+# time=1215 packet_mon:: Saw packet on Port A input: pkt=sa=0000abcd da=0000abcd crc=abcd1234
+# time=                1215 pkt_drv::drv_pkt_portA:count=0 cur_word=00001234
+# time=1215 pkt_chk:: got packet on port:0 packet=sa=0000abcd da=0000abcd crc=abcd1234
+# time=                1225 pkt_drv::drv_pkt_portA:count=1 cur_word=0000abcd
+# time=                1235, packet_mon:: Seeing SoP on Port A input
+# time=                1235 pkt_drv::drv_pkt_portA:count=2 cur_word=abcd1234
+# time=                1245 pkt_drv::drv_pkt_portA:count=3 cur_word=00000000
+# time=1255 packet_mon:: Saw packet on Port A input: pkt=sa=0000abcd da=00001234 crc=abcd1234
+# time=1255 pkt_chk:: got packet on port:0 packet=sa=0000abcd da=00001234 crc=abcd1234
+# ** Note: $finish    : pkt_tb_top.sv(90)
+#    Time: 10045 ns  Iteration: 0  Instance: /pkt_tb_top
+# 1
+# Break at pkt_tb_top.sv line 90
+#  quit -sim
+# End time: 14:32:10 on Jul 06,2020, Elapsed time: 0:00:09
+# Errors: 0, Warnings: 0
+vcd2wlf dump.vcd newwave.wlf
+vsim -view newwave.wlf
+# WLF file newwave.wlf contains no context information.
+ls
+# ..eth_pkt_mon.sv.un~                                            eth_pkt_drv.sv~     
+# .eth_pkt.sv.un~                                                 eth_pkt_gen.sv      
+# .eth_pkt_chk.sv.un~                                             eth_pkt_gen.sv~     
+# .eth_pkt_drv.sv.un~                                             eth_pkt_mon.sv      
+# .eth_pkt_gen.sv.un~                                             eth_pkt_mon.sv~     
+# .eth_pkt_mon.sv                                                 eth_sw_if.sv        
+# .eth_pkt_mon.sv.un~                                             eth_sw_if.sv.bak    
+# .pkt_tb_env_pkg.sv.un~                                          fifo.sv             
+# .pkt_tb_top.sv.un~                                              fifo.sv.bak         
+# 2015-03-04_09-12-21__SocVerifUdemy_Lec15_SVLangInterfaces.pptx  newwave.wlf         
+# dump.vcd                                                        pkt_tb_env_pkg.sv   
+# dump.wlf                                                        pkt_tb_env_pkg.sv~  
+# eth_fsm.sv                                                      pkt_tb_top.sv       
+# eth_fsm.sv.bak                                                  pkt_tb_top.sv~      
+# eth_pkt.sv                                                      qverilog.log        
+# eth_pkt.sv~                                                     switch2x2.sv        
+# eth_pkt_chk.sv                                                  switch2x2.sv.bak    
+# eth_pkt_chk.sv~                                                 vsim.wlf            
+# eth_pkt_drv.sv                                                                      
+# 
+# work:
+# @_opt  _lib.qdb      _lib1_10.qpg  _temp     _vmake        
+# _info  _lib1_10.qdb  _lib1_10.qtl  _tempmsg                
+ls -lrt
+# -rw-rw-rw- 1 varun Domain Users   29388 2020-07-06 14:35 qverilog.log
+# -rw-rw-rw- 1 varun Domain Users   49152 2020-07-06 14:32 newwave.wlf
+# -rw-rw-rw- 1 varun Domain Users     334 2020-07-06 14:32 dump.vcd
+# -rw-rw-rw- 1 varun Domain Users   79999 2020-07-06 14:31 .pkt_tb_top.sv.un~
+# -rw-rw-rw- 1 varun Domain Users    1551 2020-07-06 14:31 pkt_tb_top.sv
+# -rw-rw-rw- 1 varun Domain Users    1551 2020-07-06 14:29 pkt_tb_top.sv~
+# -rw-rw-rw- 1 varun Domain Users   49152 2020-07-06 14:18 dump.wlf
+# -rw-rw-rw- 1 varun Domain Users  111313 2020-07-05 17:20 .eth_pkt_drv.sv.un~
+# -rw-rw-rw- 1 varun Domain Users    3702 2020-07-05 17:20 eth_pkt_drv.sv
+# -rw-rw-rw- 1 varun Domain Users    3742 2020-07-05 17:19 eth_pkt_drv.sv~
+# -rw-rw-rw- 1 varun Domain Users   50395 2020-07-05 17:12 .eth_pkt_gen.sv.un~
+# -rw-rw-rw- 1 varun Domain Users     892 2020-07-05 17:12 eth_pkt_gen.sv
+# -rw-rw-rw- 1 varun Domain Users     890 2020-07-05 17:03 eth_pkt_gen.sv~
+# -rw-rw-rw- 1 varun Domain Users  101050 2020-07-05 16:41 .eth_pkt.sv.un~
+# -rw-rw-rw- 1 varun Domain Users    3338 2020-07-05 16:41 eth_pkt.sv
+# -rw-rw-rw- 1 varun Domain Users    3344 2020-07-05 15:54 eth_pkt.sv~
+# -rw-rw-rw- 1 varun Domain Users  204800 2020-07-05 14:59 vsim.wlf
+# -rw-rw-rw- 1 varun Domain Users   67911 2020-07-05 14:53 .eth_pkt_chk.sv.un~
+# -rw-rw-rw- 1 varun Domain Users    1876 2020-07-05 14:53 eth_pkt_chk.sv
+# -rw-rw-rw- 1 varun Domain Users    5061 2020-07-05 14:52 switch2x2.sv
+# -rw-rw-rw- 1 varun Domain Users    1346 2020-07-05 14:49 fifo.sv
+# -rw-rw-rw- 1 varun Domain Users    1348 2020-07-05 14:49 fifo.sv.bak
+# -rw-rw-rw- 1 varun Domain Users   39689 2020-07-03 21:57 .pkt_tb_env_pkg.sv.un~
+# -rw-rw-rw- 1 varun Domain Users    1768 2020-07-03 21:57 pkt_tb_env_pkg.sv
+# -rw-rw-rw- 1 varun Domain Users    1871 2020-07-03 21:57 eth_pkt_chk.sv~
+# -rw-rw-rw- 1 varun Domain Users    1767 2020-07-03 21:53 pkt_tb_env_pkg.sv~
+# -rw-rw-rw- 1 varun Domain Users   46036 2020-07-03 21:50 .eth_pkt_mon.sv.un~
+# -rw-rw-rw- 1 varun Domain Users    4388 2020-07-03 21:50 eth_pkt_mon.sv
+# -rw-rw-rw- 1 varun Domain Users    4386 2020-07-03 12:55 eth_pkt_mon.sv~
+# -rw-rw-rw- 1 varun Domain Users     523 2020-07-03 11:55 ..eth_pkt_mon.sv.un~
+# -rw-rw-rw- 1 varun Domain Users      24 2020-07-03 11:55 .eth_pkt_mon.sv
+# -rw-rw-rw- 1 varun Domain Users    2339 2020-07-01 20:50 eth_sw_if.sv
+# -rw-rw-rw- 1 varun Domain Users    2299 2020-07-01 20:50 eth_sw_if.sv.bak
+# -rw-rw-rw- 1 varun Domain Users    4945 2020-07-01 19:30 switch2x2.sv.bak
+# -rw-rw-rw- 1 varun Domain Users    1467 2020-07-01 12:56 eth_fsm.sv
+# -rw-rw-rw- 1 varun Domain Users    1465 2020-07-01 12:55 eth_fsm.sv.bak
+# -rw-rw-rw- 1 varun Domain Users 1360415 2020-06-25 20:38 2015-03-04_09-12-21__SocVerifUdemy_Lec15_SVLangInterfaces.pptx
+# 
+# work:
+# drwxrwxrwx 1 varun Domain Users   4096 2020-07-06 14:32 @_opt
+# -rw-rw-rw- 1 varun Domain Users   4086 2020-07-06 14:32 _info
+# -rw-rw-rw- 1 varun Domain Users  49152 2020-07-06 14:32 _lib.qdb
+# -rw-rw-rw- 1 varun Domain Users  32768 2020-07-06 14:32 _lib1_10.qdb
+# -rw-rw-rw- 1 varun Domain Users 120587 2020-07-06 14:32 _lib1_10.qtl
+# -rw-rw-rw- 1 varun Domain Users 204800 2020-07-06 14:32 _lib1_10.qpg
+# -rw-rw-rw- 1 varun Domain Users     29 2020-07-06 14:32 _vmake
+# drwxrwxrwx 1 varun Domain Users      0 2020-07-05 14:50 _temp
+# drwxrwxrwx 1 varun Domain Users      0 2020-07-05 14:43 _tempmsg
+qverilog -sv fifo.sv eth_fsm.sv switch2x2.sv pkt_tb_top.sv -l log.txt
+# QuestaSim-64 qverilog 10.4e Compiler 2016.04 Apr  9 2016
+# Start time: 14:36:20 on Jul 06,2020
+# qverilog -reportprogress 300 -guimode -sv fifo.sv eth_fsm.sv switch2x2.sv pkt_tb_top.sv -l log.txt 
+# -- Compiling module fifo
+# -- Compiling module eth_fsm
+# -- Compiling package switch2x2_sv_unit
+# -- Compiling module switch2x2
+# -- Compiling package pkt_tb_env_pkg
+# -- Compiling interface eth_sw_if
+# -- Compiling package pkt_tb_top_sv_unit
+# -- Importing package pkt_tb_env_pkg
+# -- Compiling module pkt_tb_top
+# 
+# Top level modules:
+# 	pkt_tb_top
+# End time: 14:36:20 on Jul 06,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vsim -lib work switch2x2_sv_unit pkt_tb_top_sv_unit pkt_tb_top -c -do {run -all; quit -sim} -appendlog -l log.txt -vopt -prevmsgcount 0,0,0,0 -usestarttime 20,36,14,6,6,120,1,187,1
