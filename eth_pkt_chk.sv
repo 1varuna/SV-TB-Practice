@@ -76,4 +76,3 @@ class eth_pkt_chk;
 	endfunction
 
 endclass
-

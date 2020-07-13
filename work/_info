@@ -15,25 +15,42 @@ Vi73NhA_LLXVP;^c>>LZA?0
 04 18 4 work pkt_tb_top_sv_unit fast 0
 Z1 04 10 4 work pkt_tb_top fast 0
 =1-705a0fc01893-5f032c94-2a2-458c
-o-quiet -auto_acc_if_foreign -work work
+Z2 o-quiet -auto_acc_if_foreign -work work
 n@_opt
-Z2 OL;O;10.4e;61
+Z3 OL;O;10.4e;61
 R0
+T_opt1
+!s110 1594645570
+Vi8DMg2C;7ZRR`UJjED?j60
+R1
+=1-705a0fc01893-5f0c5c3f-3af-208c
+R2
+n@_opt1
+R3
+R0
+T_opt2
+!s110 1594646596
+V@SOZUhV?kfWWYEJZ3F>IE1
+R1
+=1-705a0fc01893-5f0c6044-104-4d4
+o-quiet -auto_acc_if_foreign -work work +acc
+n@_opt2
+R3
 Tdbg_pkt_tb_top
 !s110 1594151021
 V__nCP7mgiJ8dl6>8cJ_fT1
 R1
 o+acc
 ndbg_pkt_tb_top
-R2
+R3
 R0
 veth_fsm
-Z3 DXx6 sv_std 3 std 0 22 WmjPaeP=7F5?QFXzJ>D[Q2
-Z4 !s110 1594210883
+Z4 DXx6 sv_std 3 std 0 22 WmjPaeP=7F5?QFXzJ>D[Q2
+Z5 !s110 1594646573
 !i10b 1
 !s100 6<kW;=Q_FaV1zTQz4UhJQ0
 I;3cg949=ReUzFgBYLDDkA1
-Z5 VDg1SIo80bB@j0V0VzS_@n1
+Z6 VDg1SIo80bB@j0V0VzS_@n1
 !s105 eth_fsm_sv_unit
 S1
 R0
@@ -41,17 +58,17 @@ w1593604572
 8eth_fsm.sv
 Feth_fsm.sv
 L0 1
-Z6 OL;L;10.4e;61
+Z7 OL;L;10.4e;61
 r1
 !s85 0
 31
-Z7 !s108 1594210882.000000
-Z8 !s107 eth_sw_if.sv|eth_pkt_chk.sv|eth_pkt_mon.sv|eth_pkt_drv.sv|eth_pkt_gen.sv|eth_pkt.sv|pkt_tb_env_pkg.sv|pkt_tb_top.sv|switch2x2.sv|eth_fsm.sv|fifo.sv|
-Z9 !s90 -reportprogress|300|-guimode|-sv|fifo.sv|eth_fsm.sv|switch2x2.sv|pkt_tb_top.sv|-l|log.txt|
+Z8 !s108 1594646572.000000
+Z9 !s107 eth_sw_if.sv|eth_pkt_chk.sv|eth_pkt_mon.sv|eth_pkt_drv.sv|eth_pkt_gen.sv|eth_pkt.sv|pkt_tb_env_pkg.sv|pkt_tb_top.sv|switch2x2.sv|eth_fsm.sv|fifo.sv|
+Z10 !s90 -reportprogress|300|-sv|fifo.sv|eth_fsm.sv|switch2x2.sv|pkt_tb_top.sv|
 !i113 0
-Z10 o-sv -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+Z11 o-sv -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
 Xeth_pkt_chk_sv_unit
-R3
+R4
 !s110 1593803465
 !i10b 1
 !s100 5]_DZ=:ke^@WTbo>>4R5h3
@@ -62,10 +79,10 @@ S1
 R0
 w1593803463
 8eth_pkt_chk.sv
-Z11 Feth_pkt_chk.sv
-Z12 Feth_pkt.sv
+Z12 Feth_pkt_chk.sv
+Z13 Feth_pkt.sv
 L0 5
-R6
+R7
 r1
 !s85 0
 31
@@ -73,9 +90,9 @@ r1
 !s107 eth_pkt.sv|eth_pkt_chk.sv|
 !s90 -reportprogress|300|-sv|eth_pkt_chk.sv|
 !i113 0
-R10
+R11
 Xeth_pkt_drv_sv_unit
-R3
+R4
 !s110 1593804946
 !i10b 1
 !s100 HWC:]9W5hlWJ12a[7?NJ42
@@ -86,10 +103,10 @@ S1
 R0
 w1593804939
 8eth_pkt_drv.sv
-Z13 Feth_pkt_drv.sv
-R12
+Z14 Feth_pkt_drv.sv
+R13
 L0 5
-R6
+R7
 r1
 !s85 0
 31
@@ -97,9 +114,9 @@ r1
 !s107 eth_pkt.sv|eth_pkt_drv.sv|
 !s90 -reportprogress|300|-sv|eth_pkt_drv.sv|
 !i113 0
-R10
+R11
 Xeth_pkt_gen_sv_unit
-R3
+R4
 !s110 1593960627
 !i10b 1
 !s100 iUBbh7R386@>VP88PT8TR2
@@ -110,10 +127,10 @@ S1
 R0
 w1593960625
 8eth_pkt_gen.sv
-Z14 Feth_pkt_gen.sv
-R12
+Z15 Feth_pkt_gen.sv
+R13
 L0 5
-R6
+R7
 r1
 !s85 0
 31
@@ -121,9 +138,9 @@ r1
 !s107 eth_pkt.sv|eth_pkt_gen.sv|
 !s90 -reportprogress|300|-sv|eth_pkt_gen.sv|
 !i113 0
-R10
+R11
 Xeth_pkt_mon_sv_unit
-R3
+R4
 !s110 1593777370
 !i10b 1
 !s100 IAN^:T5gL=`69ENNan:f?2
@@ -134,10 +151,10 @@ S1
 R0
 w1593777357
 8eth_pkt_mon.sv
-Z15 Feth_pkt_mon.sv
-R12
+Z16 Feth_pkt_mon.sv
+R13
 L0 5
-R6
+R7
 r1
 !s85 0
 31
@@ -145,9 +162,9 @@ r1
 !s107 eth_pkt.sv|eth_pkt_mon.sv|
 !s90 -reportprogress|300|-sv|eth_pkt_mon.sv|
 !i113 0
-R10
+R11
 Xeth_pkt_sv_unit
-R3
+R4
 !s110 1593960866
 !i10b 1
 !s100 X_dGQZc?gcVMofZ^Hj70c1
@@ -158,9 +175,9 @@ S1
 R0
 w1593960853
 8eth_pkt.sv
-R12
+R13
 L0 5
-R6
+R7
 r1
 !s85 0
 31
@@ -168,37 +185,37 @@ r1
 !s107 eth_pkt.sv|
 !s90 -reportprogress|300|-sv|eth_pkt.sv|
 !i113 0
-R10
+R11
 Yeth_sw_if
-R3
 R4
+Z17 !s110 1594646574
 !i10b 1
 !s100 1EYLHRI6VfiG]jTJ@h9f_0
 IN9@ElNMPl9N4]k?Ym[3cE0
-R5
-Z16 !s105 pkt_tb_top_sv_unit
+R6
+Z18 !s105 pkt_tb_top_sv_unit
 S1
 R0
 w1593633041
 8eth_sw_if.sv
-Z17 Feth_sw_if.sv
+Z19 Feth_sw_if.sv
 L0 1
-R6
+R7
 r1
 !s85 0
 31
-R7
 R8
 R9
-!i113 0
 R10
+!i113 0
+R11
 vfifo
-R3
 R4
+R5
 !i10b 1
 !s100 C2JYUJncmgEYAmfE1bgH:3
 I3O[84FUdH51l1HImc8cmM2
-R5
+R6
 !s105 fifo_sv_unit
 S1
 R0
@@ -206,68 +223,68 @@ w1593956996
 8fifo.sv
 Ffifo.sv
 L0 1
-R6
+R7
 r1
 !s85 0
 31
-R7
 R8
 R9
-!i113 0
 R10
+!i113 0
+R11
 Xpkt_tb_env_pkg
-R3
 R4
+R17
 !i10b 1
-!s100 MHc3YK1oPSDfQSa^42WI52
-IV>]e^4WVaGh7;ci>S_D1H3
-VV>]e^4WVaGh7;ci>S_D1H3
+!s100 nlzzHM=APJ_6^iiDFOiog0
+I7;5jo0gnT03U_dEJX?b200
+V7;5jo0gnT03U_dEJX?b200
 S1
 R0
-w1594043507
-Z18 Fpkt_tb_env_pkg.sv
-R12
-R14
+Z20 w1594646496
+Z21 Fpkt_tb_env_pkg.sv
 R13
 R15
-R11
+R14
+R16
+R12
 L0 3
-R6
+R7
 r1
 !s85 0
 31
-R7
 R8
 R9
-!i113 0
 R10
+!i113 0
+R11
 vpkt_tb_top
-R3
-Z19 DXx4 work 14 pkt_tb_env_pkg 0 22 V>]e^4WVaGh7;ci>S_D1H3
+R4
+Z22 DXx4 work 14 pkt_tb_env_pkg 0 22 7;5jo0gnT03U_dEJX?b200
 DXx4 work 18 pkt_tb_top_sv_unit 0 22 SP`fNZ>6X0AS3R:L:LLK?0
-R5
+R6
 r1
 !s85 0
 31
 !i10b 1
 !s100 EBP_^6YX;_zSS=3j66JS<0
 I?0WefaiMohHoWS_XYYQn?0
-R16
+R18
 S1
 R0
-Z20 w1594042314
-Z21 8pkt_tb_top.sv
-Z22 Fpkt_tb_top.sv
+w1594042314
+Z23 8pkt_tb_top.sv
+Z24 Fpkt_tb_top.sv
 L0 6
-R6
 R7
 R8
 R9
-!i113 0
 R10
+!i113 0
+R11
 Xpkt_tb_top_sv_unit
-R3
-R19
+R4
+R22
 VSP`fNZ>6X0AS3R:L:LLK?0
 r1
 !s85 0
@@ -279,21 +296,21 @@ ISP`fNZ>6X0AS3R:L:LLK?0
 S1
 R0
 R20
+R23
+R24
 R21
-R22
-R18
-R17
+R19
 L0 4
-R6
 R7
 R8
 R9
-!i113 0
 R10
+!i113 0
+R11
 vswitch2x2
-R3
+R4
 DXx4 work 17 switch2x2_sv_unit 0 22 aVIT9Ik^V>]JGaDRdoQQD0
-R5
+R6
 r1
 !s85 0
 31
@@ -303,18 +320,18 @@ IND=JMSbiA:V>DKE7V<kiU3
 !s105 switch2x2_sv_unit
 S1
 R0
-Z23 w1593957165
-Z24 8switch2x2.sv
-Z25 Fswitch2x2.sv
+Z25 w1593957165
+Z26 8switch2x2.sv
+Z27 Fswitch2x2.sv
 L0 4
-R6
 R7
 R8
 R9
-!i113 0
 R10
+!i113 0
+R11
 Xswitch2x2_sv_unit
-R3
+R4
 VaVIT9Ik^V>]JGaDRdoQQD0
 r1
 !s85 0
@@ -325,13 +342,13 @@ IaVIT9Ik^V>]JGaDRdoQQD0
 !i103 1
 S1
 R0
-R23
-R24
 R25
+R26
+R27
 L0 1
-R6
 R7
 R8
 R9
-!i113 0
 R10
+!i113 0
+R11

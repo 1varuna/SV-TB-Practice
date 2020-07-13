@@ -1,4 +1,0 @@
-fifo.sv
-eth_rcv_fsm.sv
-switch2x2.sv
-pkt_tb_top.sv
