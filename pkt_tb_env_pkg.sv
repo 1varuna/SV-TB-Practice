@@ -68,7 +68,7 @@ package pkt_tb_env_pkg;
 				pkt_gen.run();
 				pkt_drv.run();
 				pkt_mon.run();
-				//pkt_chk.run();
+				pkt_chk.run();
 			join
 		endtask
 

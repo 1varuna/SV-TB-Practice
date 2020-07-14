@@ -27,7 +27,7 @@ class eth_pkt_chk;
 		fork
 			get_and_process(0);
 			get_and_process(1);
-			get_and_process(2);
+			//get_and_process(2);
 			get_and_process(3);
 		join_none
 	endtask

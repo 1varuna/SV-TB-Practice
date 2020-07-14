@@ -37,7 +37,7 @@ class eth_pkt_chk;
 		$display("pkt_chk::get_and_process() \t process_pkt on port=%0d called",port);
 		forever begin
 			mbx_in[port].get(pkt);
-			$display("time=%0t pkt_chk:: got packet on port:%0d packet=%s",$time,pkt.to_string());
+			$display("time=%0t pkt_chk:: got packet on port:%0d packet=%s",$time,port,pkt.to_string());
 			if(port<2) begin		// input packets (1 and 2)
 				gen_exp_pkt(pkt);
 			end
@@ -76,4 +76,3 @@ class eth_pkt_chk;
 	endfunction
 
 endclass
-

@@ -20,17 +20,18 @@ class eth_pkt;
 	}
 
 	// Define constraint on packet data size
-	
+
+	/*	
 	constraint pkt_data_c{
-		pkt_data.size() >=4;
-		pkt_data.size() <=32;
+		pkt_data.size() >=52;
+		pkt_data.size() <=1506;
 		pkt_data.size()%4==0;
 	}
-	
+	*/
 
 	// Define constraint for small/large/medium packets
 
-	/*	
+		
 	constraint pkt_size_c {			// CHECK
 		pkt_data.size() dist
 		{
@@ -39,7 +40,7 @@ class eth_pkt;
 			[1024:1506]:=25
 		};
 	}
-	*/
+	
 	// Add more constraints for data patterns
 	
 	function void build_custom_random();
@@ -69,14 +70,23 @@ class eth_pkt;
 
 	function void fill_pkt_data();
 		int pkt_data_size;
+		bit [31:0] info;
 		//pkt_data_size = $urandom_range(8,24);
 		pkt_data_size = $urandom_range(52,1506);
+		$display("\tETH_PKT:: Number of data packets to be sent(Min:52, Max:1506) = %0d \n",pkt_data_size);
 
 		// make it double word aligned (multiple of 4)
 		 pkt_data_size = (pkt_data_size >> 2) << 2;
-		for (int i=0;i<pkt_data.size();i++)
+		 /*
+		 * Verified : WORKING
+		 $display("\t ETH_PKT::fill_pkt_data Packet Data Size is : %0d \n",pkt_data_size);
+		 */
+		$display("\t ETH_PKT::fill_pkt_data pkt_data.size is %0d \n",pkt_data.size());
+		for (int i=0;i<pkt_data_size;i++)
 		begin
-			pkt_data.push_back($urandom());
+			info = $urandom();
+			$display("\tETH_PKT:: packet data generated: %0h\n",info);
+			pkt_data.push_back(info);
 		end
 	endfunction
 
@@ -87,6 +97,7 @@ class eth_pkt;
 
 	function void post_randomize();		// create a complete packet
 		pkt_crc = calc_crc();
+		$display("\t ETH_PKT::post_randomize() pkt_data.size is %0d \n",pkt_data.size());
 		pkt_size_bytes = pkt_data.size()+4+4+4;	// 4B for src_addr, 4B for dst_addr, 4B for crc
 		for(int i=0;i<4;i++)
 		begin

@@ -5,7 +5,7 @@ compile:
 	vlog -sv fifo.sv eth_fsm.sv switch2x2.sv pkt_tb_top.sv
 
 run_sim:
-	vsim -voptargs=+acc work.pkt_tb_top -novopt 
+	vsim work.pkt_tb_top -voptargs=+acc
 
 start_wave:
 	view signals \

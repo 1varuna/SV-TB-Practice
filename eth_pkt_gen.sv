@@ -12,7 +12,7 @@ class eth_pkt_gen_c;
 
 	task run;
 		eth_pkt pkt;
-		int count=0;
+		int count=0;		// varun added: to keep track of how many packets are being generated
 		num_pkts = $urandom_range(2,50);
 		//$display("\t INSIDE PKT_GENERATOR :: Number of packets to be generated are: %d\n",num_pkts);
 		for (int i=0;i<num_pkts;i++)
@@ -29,6 +29,7 @@ class eth_pkt_gen_c;
 				$display("\tPKT INFO: %s\n",pkt.to_string());
 			`endif
 				mbx_out.put(pkt);
+				$display("\t\tPKT_GEN::pkt.put() Generated packet put on mailbox\n");
 		end
 	endtask
 
